@@ -1,0 +1,228 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.body-section{
+    min-height: 93vh;
+}
+html{    
+  font-family: 'Work Sans';
+}
+
+
+/* Header Styles */
+#header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5% 30% 1fr 10%;
+  height: max(7vh, 70px);
+  background-color: #292c30;
+  color: white;
+}
+
+#header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.active-li {
+  color: #ffffff;
+}
+
+#logo-section {
+  grid-column: 2/3;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 100;
+}
+#logo-section h1{
+    font-size: 20px;
+}
+
+#nav-section {
+  grid-column: 3/4;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+#header-nav {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-nav-ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+}
+.header-nav-li a{
+    color: rgb(199, 199, 199);
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.header-nav-li a:hover{
+    color: whitesmoke;
+}
+
+/* Footer Styles */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max(10vh, 200px);
+    background: #292C30;
+    color: rgb(199, 199, 199);
+    grid-template-rows: 5% 1fr 1fr 15%;
+    font-family: 'Work Sans';
+}
+
+#footer-nav-section {
+    margin: auto;
+}
+
+#copyright-section {
+    margin: auto;
+}
+#footer-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-li {
+    margin: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.footer-li:hover {
+    color: #ffffff;
+}
+
+/* Index Style */
+
+#hero{
+    width: 100%;
+    height: 700px;
+}
+.hero-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Contact Section */
+#contact-section {
+    min-height: 800px;
+    background: #292C30;
+    border-bottom: 2px solid #F2F0EA;
+    padding-bottom: 5%;
+}
+
+#contact-section-title {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #F2F0EA;
+    text-align: center;
+    padding: 5% 0;
+    font-family: 'Crimson Pro';
+}
+
+#contact-cards {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: 450px;
+}
+
+.contact-card {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    max-height: 450px;
+    grid-template-rows: 5% 1fr 1fr 5%;
+}
+
+.card-title {
+    grid-row: 2/3;
+    text-align: center;
+    margin: auto;
+    font-family: 'Work Sans';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.card-body {
+    grid-row: 3/4;
+    text-align: center;
+    font-family: 'Crimson Pro';
+    font-weight: 400;
+    font-size: 2rem;
+}
+.card-body a{
+    border-bottom: 1px solid #424549 ;
+    color: #424549;
+}
+.card-body a i{
+    font-size: 1rem;
+}
+
+#contact-linkedin {
+    background: #C6BAB0;
+    color: #424549;
+}
+
+#contact-email {
+    background: #424549;
+    color: #F2F0EA;
+}
+
+#contact-instagram {
+    background: #F2F0EA;
+    color: #424549;
+}
+#contact-button{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Gallery Styles */
+#images-gallery{
+  width: 90%;
+  margin:20px auto ;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr) );
+}
+#images-gallery img{
+  /* padding: 10px; */
+  width: 100%;  
+  height: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
